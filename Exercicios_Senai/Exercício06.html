@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+<body>
+    <header>
+        <h1>Locação de Veículos</h1>
+        <div align="left">
+            <img src="img/skyline-gtr.jpg" width="300">
+            <p>Há 35 anos atuando na área de locação de veículos com segurança,
+                e garantia de satisfação. Temos os melhores preços e modelos do mercado.
+            </p>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <h2>Análise de cadastro</h2>
+        <p>Preencha os campos abaixo e analisaremos seus dados.<br>
+        Se tudo estiver correto ligaremos para marcar uma visita.</p>
+        <br>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                  <label>Nome</label>
+                  <input type="text" name="nome" placeholder="digite seu nome" required>
+                  <label>Data de Nascimento</label>
+                  <input type="date" name="data_nascimento" required>
+                  <label>Telefone</label>
+                  <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX"> 
+            </fieldset>
+            <fieldset>
+                <legend>CNH</legend>
+                <label>Número de Registro</label>
+                <input type="number" name="numero_registro" placeholder="informe o número da sua CNH" required>
+                <label>Validade</label>
+                <input type="date" name="validade" required>
+            </fieldset>
+            <fieldset>
+                <legend>Carros</legend>
+                <label>Modelo do Carro</label>
+                <select name="carro" required>
+                    <option value="Escolha um carro"></option>
+                    <optgroup label="Mercedes">
+                        <option value="Mercedes G63">Mercedes-AMG G63</option>
+                        <option value="Mercedes GT">Mercedes-AMG GT Black Series</option>
+                        <option value="Mercedes SLR">Mercedes-Benz SLR McLaren</option>
+                        <option value="Mercedes SLS">Mercedes-Benz SLS AMG</option>
+                    </optgroup>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
